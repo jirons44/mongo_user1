@@ -6,7 +6,7 @@ describe('', ()=> {
     let sam;
 
     beforeEach((done) => {
-        sam = new User( {name : 'Sam', postCount: 0});
+        sam = new User( {name : 'Sam', likes: 0});
         sam.save()
             .then( () => done() );
     });
@@ -55,13 +55,13 @@ describe('', ()=> {
 
     });
 
-    it('a user can have their postcount incremented by 1', (done)=> {
+    it('a user can have their likes incremented by 1', (done)=> {
         // user update operators - $inc
 
-        User.update( { name: 'Sam' }, { $inc: { postCount: 1} })
+        User.update( { name: 'Sam' }, { $inc: { likes: 1} })
             .then(() => User.findOne( {name: 'Sam'} ))
             .then((user) => {
-                assert(user.postCount === 1 );
+                assert(user.likes === 1);
                 done();
             });
     });

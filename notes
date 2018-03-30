@@ -48,5 +48,19 @@
     - model instance ...user.validation() or user.validationSync()
 
 
+  -****************************
+    Virtual types
+  -****************************
+
+    postCount can look at array of posts to get count
+
+    virtual is off of the schema
+    i.e
+
+    UserSchema.virtual('postCount').get(function() {
+
+    });
+
+
 */
 
