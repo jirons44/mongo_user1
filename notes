@@ -78,6 +78,10 @@ Schema notes
 -****************************
   pre and post event ( init, validate, save, remove )
 
+-****************************
+  find all users, skip limit and sorting using modifiers
+-****************************
+
 
 
 */
