@@ -61,6 +61,23 @@
 
     });
 
+-****************************
+Schema notes
+-****************************
+
+    -- large lists....limit number of items when fetching.
+
+    nesting data structures is challenging, but has its place.
+
+        in this example....
+          a collection of User, Post, and Comment
+
+
+-****************************
+  middleware
+-****************************
+  pre and post event
+
 
 */
 
