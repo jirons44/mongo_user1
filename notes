@@ -76,7 +76,8 @@ Schema notes
 -****************************
   middleware
 -****************************
-  pre and post event
+  pre and post event ( init, validate, save, remove )
+
 
 
 */
